@@ -7,5 +7,5 @@ colors <- c("black","red","blue")
 matplot(x, initial[selectors], type="lll", lty = 1, lwd=1, col=colors,
         ylab="Energy sub metering", xlab="", xaxt="n")
 axis.POSIXct(1,x, format="%a")
-legend("topright", lwd=2, col = colors, legend = selectors)
+legend("topright", lwd=1, col = colors, legend = selectors)
 dev.off()
