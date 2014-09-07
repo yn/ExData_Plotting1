@@ -3,7 +3,7 @@ png(filename = "plot4.png", width = 480, height = 480, units = "px", bg="transpa
 par(mfrow=c(2,2))
 datetime <- with(initial, as.POSIXct(paste(Date, Time), format="%d/%m/%Y %H:%M:%S"))
 #top left
-with(initial, plot(datetime, Global_active_power, type="l", ylab="Global Active Power (kilowatts)", xlab=""))
+with(initial, plot(datetime, Global_active_power, type="l", ylab="Global Active Power", xlab=""))
 #top right
 with(initial, plot(datetime, Voltage, type="l"))
 #bottom left
