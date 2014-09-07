@@ -3,7 +3,7 @@ initial <- read.table("household_power_consumption_subset.txt", header = TRUE, s
 png(filename = "plot3.png", width = 480, height = 480, units = "px", bg="transparent")
 x <- as.POSIXct(paste(initial$Date, initial$Time), format="%d/%m/%Y %H:%M:%S")
 selectors <- Filter(Curry(grepl, "^Sub_metering"), colnames(initial))
-colors <- c("black", "blue", "red")
+colors <- c("black","red","blue")
 
 l1 = initial$Sub_metering_1
 c1 = colors[1]
